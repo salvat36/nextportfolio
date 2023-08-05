@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -18,8 +19,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className='bg-blue-700'>
-          
+        <section className='bg-blue-700 min-h-screen'>
+          <h1>hi</h1>
+          <ul>
+            <li></li>
+            <li a href='#'>Resume</li>
+          </ul>
         </section>
       </main>
     </div>

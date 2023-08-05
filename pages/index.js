@@ -11,6 +11,7 @@ import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
+import Contact from "./Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -61,6 +62,15 @@ export default function Home() {
                   href="#portfolio"
                 >
                   Portfolio
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50"
+                  href="#contact"
+                >
+                  Contact
                 </a>
               </li>
             </ul>
@@ -156,6 +166,11 @@ export default function Home() {
               Freelancer providing services for programmding needs. Get in touch
               with me below!
             </p>
+          </div>
+        </section>
+        <section id="contact">
+          <div>
+            <Contact/>
           </div>
         </section>
       </main>

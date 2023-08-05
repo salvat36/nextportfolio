@@ -6,6 +6,11 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,13 +23,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.icon" />
       </Head>
 
-      <main className="bg-white px-10">
-        <section className="bg-blue-700 min-h-screen">
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        <section className='min-h-screen'>
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Developed By Ryan Salvato</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
               </li>
               <li>
                 {" "}
@@ -37,17 +42,88 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div>
-            <h2>Ryan Salvato</h2>
-            <h3>Developer and designer</h3>
-            <p>
-              Freelancer providing services for programmding needs.  Get in touch with me below!
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+              Ryan Salvato
+            </h2>
+            <h3 className="text-2xl py-2">Developer and designer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Freelancer providing services for programmding needs. Get in touch
+              with me below!
             </p>
           </div>
+          <div className="text-5xl flex justify-center gap-16 text-gray-600">
+            <AiFillLinkedin />
+            <AiFillTwitterCircle />
+            <AiFillYoutube />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <Image src={deved} layout="fill" objectFit="cover" alt="" />
+          </div>
+        </section>
+
+        <section>
           <div>
-            <AiFillLinkedin/>
-            <AiFillTwitterCircle/>
-            <AiFillYoutube/>
+            <h3 className="text-3xl py-1">Languages</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Javascript, CSS, HTML, SQL, React, Next.js,
+            </p>
+          </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} alt="" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs and following
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design</h4>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} alt="" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs and following
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design</h4>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100} alt="" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs and following
+                design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Design</h4>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Freelancer providing services for programmding needs. Get in touch
+              with me below!
+            </p>
           </div>
         </section>
       </main>

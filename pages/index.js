@@ -39,7 +39,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50"
                   href="#resume"
                 >
                   Resume
@@ -48,7 +48,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50"
                   href="#stack"
                 >
                   Stack
@@ -57,7 +57,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50"
                   href="#portfolio"
                 >
                   Portfolio
@@ -69,16 +69,18 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
               Ryan Salvato
             </h2>
-            <h3 className="text-2xl py-2">Software Engineer / AI-Enthusiast </h3>
+            <h3 className="text-2xl py-2">
+              Software Engineer / AI-Enthusiast{" "}
+            </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">
               Freelancer providing services for programming needs. Get in touch
               with me below!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600">
-            <AiFillLinkedin />
-            <AiFillTwitterCircle />
-            <AiFillYoutube />
+            <AiFillLinkedin className="hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50 rounded-md" />
+            <AiFillTwitterCircle className="hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50 rounded-md" />
+            <AiFillYoutube className="hover:ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50 rounded-md" />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" alt="" />
@@ -93,7 +95,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50">
               <Image src={design} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
@@ -108,7 +110,7 @@ export default function Home() {
               <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
               <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50">
               <Image src={code} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
@@ -123,7 +125,7 @@ export default function Home() {
               <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
               <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100/50">
               <Image src={consulting} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs

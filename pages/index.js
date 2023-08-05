@@ -24,20 +24,43 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className='min-h-screen'>
+        <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Developed By Ryan Salvato</h1>
+            <h1 className="text-xl font-burtons  dark:text-gray-500">
+              Developed By Ryan Salvato
+            </h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-2xl dark:text-white"
+                />
               </li>
               <li>
                 {" "}
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="#resume"
                 >
                   Resume
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="#stack"
+                >
+                  Stack
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  className="hover:animate-pulse bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="#portfolio"
+                >
+                  Portfolio
                 </a>
               </li>
             </ul>
@@ -46,9 +69,9 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
               Ryan Salvato
             </h2>
-            <h3 className="text-2xl py-2">Developer and designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
-              Freelancer providing services for programmding needs. Get in touch
+            <h3 className="text-2xl py-2">Software Engineer / AI-Enthusiast </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">
+              Freelancer providing services for programming needs. Get in touch
               with me below!
             </p>
           </div>
@@ -62,65 +85,72 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="stack">
           <div>
-            <h3 className="text-3xl py-1">Languages</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1  dark:text-gray-500">Languages</h3>
+            <p className="text-md py-5 leading-8 text-gray-800  dark:text-gray-200">
               Javascript, CSS, HTML, SQL, React, Next.js,
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-gray-500">
                 Creating elegant designs suited for your needs and following
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-gray-500">
                 Creating elegant designs suited for your needs and following
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={consulting} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-gray-500">
                 Creating elegant designs suited for your needs and following
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-200">Figma</p>
+              <p className="text-gray-800 py-1  dark:text-gray-400">Figma</p>
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+          <div id="portfolio">
+            <h3 className="text-3xl py-1  dark:text-gray-500">Portfolio</h3>
+            <p className="text-md py-5 leading-8 text-gray-800  dark:text-gray-200">
+              Freelancer providing services for programmding needs. Get in touch
+              with me below!
+            </p>
+          </div>
+          <div id="resume">
+            <h3 className="text-3xl py-1  dark:text-gray-500">Resume</h3>
+            <p className="text-md py-5 leading-8 text-gray-800  dark:text-gray-200">
               Freelancer providing services for programmding needs. Get in touch
               with me below!
             </p>
